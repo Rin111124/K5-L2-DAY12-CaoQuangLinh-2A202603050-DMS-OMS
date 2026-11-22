@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S05_ir,IR_sim,"Ghế rear_left ở bản RGB quá tối do thiếu sáng; trên IR-sim độ tương phản được nâng lên làm nổi rõ hình khối của ghế trẻ em",child_seat,"Giúp xác định chính xác vị trí và ranh giới box child_seat mà trên ảnh RGB rất khó thấy"
+S02_ir,IR_sim,"Áo thun màu xanh dương và họa tiết logo trên ngực hành khách bị mất toàn bộ sắc độ màu, chuyển thành xám đồng nhất",person,"Mất thông tin màu sắc nhận diện trang phục; chỉ nhận dạng được người qua hình thể"
+S03_ir,IR_sim,"Túi xách màu tím ở ghế rear_middle và cốc đen ở rear_right khi sang IR-sim đều chuyển thành tông xám",object,"Khó phân biệt chất liệu bề mặt (da/vải) của túi xách; nhận dạng loại vật thể hoàn toàn dựa vào hình học"
+D01,real_IR,"Đèn LED hồng ngoại 940nm phản xạ mạnh trên bề mặt tròng kính cận tạo thành đốm sáng lóa che khuất hoàn toàn mắt phải",right_eye_state,"Bắt buộc ghi eye_right = unknown thay vì đoán open/closed; các điểm face13 của mắt phải phải bật cờ occluded = 1"
+D02,real_IR,"Chai nước nhựa trong suốt dưới ánh sáng NIR bị khúc xạ và tán xạ mạnh ở viền chai, tạo bóng sáng che lấp một phần miệng và môi",face13,"Các điểm khóe miệng và môi bị che phải đánh cờ occluded = 1; không được nhầm chai nước thành phone"
+D06,real_IR,"Bàn tay tài xế giơ lên gần cụm đèn LED phát hồng ngoại bị hiện tượng phơi sáng quá mức (blooming/overexposure) tạo thành một khối trắng rực",hand,"Mất chi tiết vân tay và ranh giới các ngón tay; box hand vẫn bao quanh bàn tay nhưng không thể quan sát chi tiết bên trong"
